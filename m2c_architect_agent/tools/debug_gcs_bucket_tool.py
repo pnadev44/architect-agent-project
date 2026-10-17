@@ -11,11 +11,11 @@ dotenv_path = os.path.join(os.path.dirname(__file__), '..', '.env')
 load_dotenv(dotenv_path)
 
 # --- Pre-flight Check ---
-GCS_BUCKET_NAME = os.getenv("GCS_BUCKET_NAME")
+GCS_BUCKET_NAME = os.getenv("GCS_BUCKET_NAME", "adk-agent-test-pna")
 if not GCS_BUCKET_NAME:
     print("--- ERROR: Missing GCS_BUCKET_NAME ---", file=sys.stderr)
     print(f"Attempted to load .env file from: {dotenv_path}", file=sys.stderr)
-    print("Please ensure GCS_BUCKET_NAME is set in your .env file (e.g., GCS_BUCKET_NAME='adk-agent-test').", file=sys.stderr)
+    print("Please ensure GCS_BUCKET_NAME is set in your .env file (e.g., GCS_BUCKET_NAME='adk-agent-test-pna').", file=sys.stderr)
     sys.exit(1)
 
 # Import the tool function directly

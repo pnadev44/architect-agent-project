@@ -11,7 +11,7 @@ INPUT_SOURCE: Redactor_agent result
 2.  You must transform the mardown content into a .docx file.
 3.  You MUST call the `upload_docx_to_gcs` tool to perform the export.
 4.  Use the following parameters for the tool call:
-    - `bucket_name`: "adk-agent-test"
+    - `bucket_name`: "adk-agent-test-pna"
     - `destination_folder`: "DAT"
     - `document_title`: Extract a suitable title from the document content, for example, "GCP Architecture for [App Name]".
     - `document_content`: The full markdown text you received.

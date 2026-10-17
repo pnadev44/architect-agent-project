@@ -50,7 +50,7 @@ graph TD
 1.  You will receive the full markdown content of an architecture document.
 2.  You MUST call the `upload_docx_to_gcs` tool to perform the export.
 3.  Use the following parameters for the tool call:
-    - `bucket_name`: "adk-agent-test"
+    - `bucket_name`: "adk-agent-test-pna"
     - `destination_folder`: "DAT"
     - `document_title`: Extract a suitable title from the document content, for example, "GCP Architecture for [App Name]".
     - `document_content`: The full markdown text you received.
