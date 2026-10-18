@@ -6,8 +6,6 @@ from google.adk.tools import google_search
 
 from . import prompt
 
-MODEL = 'gemini-2.0-flash'
-
 
 finder_agent = Agent(
     model=MODEL,

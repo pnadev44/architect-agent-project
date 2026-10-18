@@ -3,7 +3,8 @@ import json
 from dotenv import load_dotenv
 
 # This points to the .env file created by 'adk create'
-load_dotenv(os.path.join("m2c_architect_agent", ".env"))
+load_dotenv(os.path.join("m2c_architect_agent", ".env"), override=True)
+load_dotenv(override=True)
 
 import streamlit as st
 import asyncio

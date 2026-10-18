@@ -1,5 +1,6 @@
-# m2c_architect_agent/config.py
+import os
 
-# Centralizing the model name to prevent typos like the trailing quote
-MODEL = 'gemini-2.0-flash'
-MAX_REJECTIONS = 1
+# Centralizing the model configuration
+# Defaulting to gemini-2.5-flash which is available and cost-effective
+MODEL = os.getenv("MODEL_NAME", "gemini-2.5-flash")
+MAX_REJECTIONS = int(os.getenv("MAX_REJECTIONS", "1"))
